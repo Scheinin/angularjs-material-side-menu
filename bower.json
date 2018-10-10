@@ -23,5 +23,8 @@
     "angular": "^1.7.5",
     "angular-material": "^1.1.10",
     "angular-ui-router": "^1.0.20"
+  },
+  "devDependencies": {
+    "less": "^3.8.1"
   }
 }
