@@ -1,0 +1,31 @@
+{
+  "name": "less",
+  "main": "dist/less.js",
+  "ignore": [
+    "**/.*",
+    "benchmark",
+    "bin",
+    "lib",
+    "test",
+    "*.md",
+    "LICENSE",
+    "Gruntfile.js",
+    "*.json",
+    "*.yml",
+    ".gitattributes",
+    ".jshintrc",
+    ".npmignore"
+  ],
+  "homepage": "https://github.com/less/less",
+  "version": "3.8.1",
+  "_release": "3.8.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.8.1",
+    "commit": "3b929c1cf0f1b5f05ba6ca5735ba593551e14e3f"
+  },
+  "_source": "https://github.com/less/less.git",
+  "_target": "^3.8.1",
+  "_originalSource": "less",
+  "_direct": true
+}
