@@ -3,13 +3,43 @@
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+
+    <link rel="stylesheet/less" href="./app.less">
 </head>
-<body>
+<body ng-app="myApp">
+
+<section layout="row" flex id="leftside-bar">
+    <md-sidenav
+            class="md-sidenav-left"
+            md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-md')"
+            md-whiteframe="4">
+
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        </md-toolbar>
+        <md-content layout-padding>
+
+        </md-content>
+
+    </md-sidenav>
+
+    <md-content flex layout-padding>
+        <div ui-view>
+
+        </div>
+    </md-content>
+</section>
+
 <script src="./bower_components/angular/angular.js"></script>
 <script src="./bower_components/angular-aria/angular-aria.js"></script>
 <script src="./bower_components/angular-animate/angular-animate.js"></script>
 <script src="./bower_components/angular-messages/angular-messages.js"></script>
 <script src="./bower_components/angular-material/angular-material.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="./bower_components/less/dist/less.js"></script>
+
+<script src="./app.js"></script>
+<script src="./directives/app-nav/directive.js"></script>
 </body>
 </html>
