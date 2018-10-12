@@ -9,37 +9,34 @@
 <body ng-app="myApp">
 
 <section layout="row" flex id="leftside-bar">
-    <md-sidenav
-            class="md-sidenav-left"
-            md-component-id="left"
-            md-is-locked-open="$mdMedia('gt-md')"
-            md-whiteframe="4">
-
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
         <md-toolbar class="md-theme-indigo">
-            <h1 class="md-toolbar-tools">Sidenav Left</h1>
+            <h1 class="md-toolbar-tools">
+                <a href="" ui-sref="home">Football team</a>
+            </h1>
         </md-toolbar>
-        <md-content layout-padding>
 
+        <md-content>
+            <app-nav></app-nav>
         </md-content>
 
     </md-sidenav>
 
     <md-content flex layout-padding>
-        <div ui-view>
-
-        </div>
+        <div ui-view></div>
     </md-content>
 </section>
 
-<script src="./bower_components/angular/angular.js"></script>
-<script src="./bower_components/angular-aria/angular-aria.js"></script>
-<script src="./bower_components/angular-animate/angular-animate.js"></script>
-<script src="./bower_components/angular-messages/angular-messages.js"></script>
-<script src="./bower_components/angular-material/angular-material.js"></script>
-<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="./bower_components/less/dist/less.js"></script>
+<script src="./bower_components/angular/angular.min.js"></script>
+<script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="./bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="./bower_components/angular-material/angular-material.min.js"></script>
+<script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="./bower_components/less/dist/less.min.js"></script>
 
 <script src="./app.js"></script>
 <script src="./directives/app-nav/directive.js"></script>
+<script src="./directives/app-menu/directive.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<div class="app-menu">
+    <div ng-repeat="section in sections">
+        <md-button layout="row" class="md-toggle-button"
+                   ng-click="section.isOpened = !section.isOpened;">
+            <md-icon>face</md-icon>
+            <span class="md-toggle-name" flex>{{ section.name }}</span>
+            <md-icon ng-if="opts.isCollapse" class="md-toggle-icon" ng-class="{'toggled' : section.isOpened}">
+                keyboard_arrow_down
+            </md-icon>
+        </md-button>
+        <ul ng-show="section.isOpened" class="md-toggle-list">
+            <li ng-repeat="page in section.pages">
+                <md-button class="md-link-button" ui-sref-active="active" ui-sref="{{ page.state }}"
+                           ng-disabled="!page.isActive"
+                           ng-click="focusSection(page)">
+                <span class="md-link-name">
+                    {{ page.name }}
+                </span>
+                </md-button>
+            </li>
+        </ul>
+        <md-divider></md-divider>
+    </div>
+</div>

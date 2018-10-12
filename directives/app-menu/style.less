@@ -1,0 +1,53 @@
+.app-menu {
+    .active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+    .md-toggle-button, .md-toggle-list, .md-link-button {
+        margin: 0;
+        padding: 0;
+    }
+    .md-toggle-button, .md-link-button {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+    }
+    .md-toggle-button {
+        padding: 0 16px;
+        :first-child {
+            margin: 0 36px 0 0;
+        }
+        .md-toggle-name {
+            text-align: left;
+        }
+        .md-toggle-icon {
+            transition: transform .3s ease-in-out;
+            &.toggled {
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+    .md-toggle-list.ng-hide {
+        max-height: 0;
+    }
+    .md-toggle-list {
+        max-height: 1300px;
+        overflow: hidden;
+        transition: .6s cubic-bezier(0.35, 0, 0.25, 1);
+        transition-property: max-height;
+        .md-link-button {
+            padding: 0 12px 0 76px;
+            text-align: left;
+            color: #666;
+            .md-link-name {
+                display: inline-block;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &[disabled] {
+                background-color: transparent;;
+            }
+        }
+    }
+}
