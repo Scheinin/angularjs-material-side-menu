@@ -23,6 +23,7 @@
     "angular": "^1.7.5",
     "angular-material": "^1.1.10",
     "angular-ui-router": "^1.0.20",
-    "less": "^3.8.1"
+    "less": "^3.8.1",
+    "material-design-icons": "^3.0.1"
   }
 }
